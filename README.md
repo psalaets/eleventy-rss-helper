@@ -10,11 +10,11 @@ This is a wrapper around the [rss module](https://github.com/dylang/node-rss).
 
 ## Usage
 
-### 1. Create feed file
+### Create feed file
 
 Create a feed file (e.g. `feed.11ty.js`) in a directory that Eleventy will process.
 
-Paste this into the file:
+Paste this boilerplate into the file:
 
 ```js
 const createRssFeed = require('eleventy-rss-helper');
@@ -37,9 +37,9 @@ module.exports = createRssFeed({
 });
 ```
 
-### 2. Fill in the empty functions
+### Fill in the empty functions
 
-**feedOptions(data)**
+#### feedOptions(data)
 
 Receives
 
@@ -47,7 +47,7 @@ Receives
 
 Returns object to be used as [feedOptions with the rss module](https://github.com/dylang/node-rss#feedoptions).
 
-**items(collections, data)**
+#### items(collections, data)
 
 Receives
 
@@ -56,7 +56,7 @@ Receives
 
 Returns array of items to include in the feed.
 
-**itemOptions(item, data)**
+#### itemOptions(item, data)
 
 Receives
 
@@ -79,10 +79,8 @@ module.exports = createRssFeed({
     return {
       title: 'mysite.com',
       description: 'Latest posts from mysite.com',
-      pubDate: new Date(),
       feed_url: `${baseUrl}${permalink}`,
-      site_url: baseUrl,
-      language: 'en-us'
+      site_url: baseUrl
     };
   },
   items(collections, data) {
