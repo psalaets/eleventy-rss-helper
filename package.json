@@ -1,0 +1,16 @@
+{
+  "name": "eleventy-rss-helper",
+  "version": "1.0.0",
+  "description": "Create RSS 2.0 feeds for an Eleventy site",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["eleventy", "rss", "feed"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "normalize-url": "^4.3.0",
+    "rss": "^1.2.2"
+  }
+}
