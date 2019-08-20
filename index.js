@@ -4,6 +4,8 @@ const RSS = require('rss');
 module.exports = createRssFeed;
 
 function createRssFeed(options) {
+  validateOptions(options);
+
   return class {
     data() {
       return {
@@ -41,5 +43,33 @@ function withNormalizedUrl(object, propertyName) {
     };
   } else {
     return object;
+  }
+}
+
+function validateOptions(options) {
+  if (typeof options.permalink != 'string') {
+    throw new Error('permalink must be a string');
+  }
+
+  if (typeof options.feedOptions != 'function') {
+    throw new Error('feedOptions must be a function');
+  }
+
+  if (typeof options.items != 'function') {
+    throw new Error('items must be a function');
+  }
+
+  if (typeof options.itemOptions != 'function') {
+    throw new Error('itemOptions must be a function');
+  }
+}
+
+function validateFeedOptionsResult(feedOptions) {
+
+}
+
+function validateItemsResult(items) {
+  if (!Array.isArray(items)) {
+    throw new Error('items() must return an Array');
   }
 }

@@ -24,7 +24,7 @@ module.exports = createRssFeed({
   feedOptions(data) {
     return {
 
-    }
+    };
   },
   items(collections, data) {
 
