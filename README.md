@@ -58,6 +58,8 @@ Returns array of items to include in the feed.
 
 #### itemOptions(item, data)
 
+Invoked once for each element in array returned by `items()`.
+
 Receives
 
 - An item from the array returned by your `items()` function
