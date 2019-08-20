@@ -1,6 +1,6 @@
 {
   "name": "eleventy-rss-helper",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Create RSS 2.0 feeds for an Eleventy site",
   "main": "index.js",
   "scripts": {
@@ -21,5 +21,10 @@
   "devDependencies": {
     "jest": "^24.9.0",
     "mockdate": "^2.0.5"
+  },
+  "homepage": "https://github.com/psalaets/eleventy-rss-helper",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/psalaets/eleventy-rss-helper.git"
   }
 }
