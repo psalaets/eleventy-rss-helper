@@ -64,10 +64,6 @@ function validateOptions(options) {
   }
 }
 
-function validateFeedOptionsResult(feedOptions) {
-
-}
-
 function validateItemsResult(items) {
   if (!Array.isArray(items)) {
     throw new Error('items() must return an Array');
