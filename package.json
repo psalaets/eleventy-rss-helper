@@ -1,6 +1,6 @@
 {
   "name": "eleventy-rss-helper",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Create RSS 2.0 feeds for an Eleventy site",
   "main": "index.js",
   "scripts": {
